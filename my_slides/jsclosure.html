@@ -47,8 +47,9 @@
         <section>
           <h2>Agenda</h2>
           <ul>
-            <li class="fragment">Definition</li>
-            <li class="fragment"></li>
+            <li class="fragment grow">Definition</li>
+            <li class="fragment grow">Power</li>
+            <li class="fragment grow">Beaware</li>
           </ul>
         </section>
 
@@ -162,11 +163,10 @@
             <pre>
               <code>
                 function main(links) {
-                    links.onclick = function() {
-                      alert("Links!");
-                    }
+                  links.onclick = function() {
+                    alert("Links!");
                   }
-                };
+                }
                 main(document.getElementsByTagName("a"));
               </code>
             </pre>
@@ -226,7 +226,7 @@
           <section>
             <h2>Why?</h2>
             <p class="fragment">All links want to access "i"</p>
-            <p class="fragment" style="color:red;">But there is only one "i" in memory</p>
+            <p class="fragment" style="color:yellow;">But there is only one "i" in memory</p>
             <p class="fragment">So all links give same result.</p>
           </section>
           <section>
@@ -247,7 +247,7 @@ main(document.getElementsByTagName("a"));
             </pre>
             <p class="fragment">Use inner method as return value</p>
             <p class="fragment">Use local variable of outter function as param for inner function</p>
-            <p class="fragment" style="color:red;">Each function has its own param</p>
+            <p class="fragment" style="color:yellow;">Each function has its own param</p>
           </section>
           <section>
             <h2>Memory leaks</h2>
